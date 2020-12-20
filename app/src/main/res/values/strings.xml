@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Test_Design</string>
+    <string name="autocompletetextview">AutoCompleteTextView</string>
+</resources>
