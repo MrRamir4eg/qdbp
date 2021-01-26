@@ -14,6 +14,7 @@ public class MainActivity extends AppCompatActivity implements OnClickListener{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         final Button chats_btn = (Button) findViewById(R.id.chats_btn);
         final Button contacts_btn = (Button) findViewById(R.id.contacts_btn);
         final Button settings_btn = (Button) findViewById(R.id.settings_btn);

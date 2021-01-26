@@ -6,13 +6,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraintLayout3"
-        android:layout_width="411dp"
-        android:layout_height="113dp"
-        android:layout_marginEnd="2dp"
-        android:layout_marginRight="2dp"
-        android:background="@color/Back"
+    <LinearLayout
+        android:id="@+id/ToolBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/LightGray"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -21,30 +21,24 @@
             android:id="@+id/textView3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="175dp"
-            android:layout_marginLeft="175dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="176dp"
-            android:layout_marginRight="176dp"
-            android:layout_marginBottom="77dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center"
             android:text="@string/contacts"
             android:textColor="@color/Black"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            android:textSize="18sp" />
 
         <Button
             android:id="@+id/button"
             android:layout_width="89dp"
             android:layout_height="46dp"
-            android:background="@color/Back"
+            android:layout_gravity="center_vertical"
+            android:background="@color/LightGray"
             android:text="@string/add"
-            android:textColor="@color/Blue"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
+            android:textColor="@color/Black" />
+    </LinearLayout>
 
     <LinearLayout
         android:id="@+id/linearLayout3"
@@ -71,7 +65,7 @@
 
         <Button
             android:id="@+id/settings_btn"
-            android:layout_width="149dp"
+            android:layout_width="130dp"
             android:layout_height="50dp"
             android:background="@drawable/border"
             android:text="@string/settings" />
@@ -81,12 +75,10 @@
         android:layout_width="411dp"
         android:layout_height="560dp"
         android:orientation="vertical"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/constraintLayout3"
-        app:layout_constraintVertical_bias="0.0">
+        app:layout_constraintTop_toBottomOf="@+id/ToolBar">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -102,7 +94,9 @@
                 android:id="@+id/imageView3"
                 android:layout_width="89dp"
                 android:layout_height="match_parent"
+                android:src="@drawable/unnamed"
                 app:srcCompat="@drawable/unnamed" />
+
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -131,6 +125,7 @@
                     android:textColor="@color/Blue" />
             </LinearLayout>
         </LinearLayout>
+
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

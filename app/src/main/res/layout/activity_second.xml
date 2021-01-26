@@ -19,6 +19,7 @@
             android:layout_width="152dp"
             android:layout_height="50dp"
             android:background="@drawable/border"
+            android:layout_gravity="center"
             android:text="@string/chats" />
 
         <Button
@@ -26,12 +27,14 @@
             android:layout_width="112dp"
             android:layout_height="50dp"
             android:background="@drawable/border"
+            android:layout_gravity="center"
             android:text="@string/contacts" />
 
         <Button
             android:id="@+id/settings_btn"
-            android:layout_width="149dp"
+            android:layout_width="128dp"
             android:layout_height="50dp"
+            android:layout_gravity="center"
             android:background="@drawable/border"
             android:text="@string/settings" />
     </LinearLayout>
@@ -87,12 +90,14 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
-            android:id="@+id/imageView"
+            android:id="@+id/ProfilePicture"
             android:layout_width="265dp"
             android:layout_height="110dp"
             android:layout_gravity="center"
             android:layout_marginTop="10dp"
-            app:srcCompat="@drawable/unnamed"/>
+            app:srcCompat="@drawable/unnamed"
+            android:src="@drawable/unnamed"/>
+
 
         <TextView
             android:id="@+id/textView"
